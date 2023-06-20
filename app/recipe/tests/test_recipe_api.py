@@ -427,7 +427,7 @@ class ImageUploadTests(TestCase):
     """Tests for the image upload API."""
 
     def setUp(self) -> None:
-        self.client = APIClient();
+        self.client = APIClient()
         self.user = get_user_model().objects.create_user(
             "user@example.com",
             "password123"
